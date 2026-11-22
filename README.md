@@ -1,23 +1,30 @@
-# the-plan-make-fun-will-carry-20261122-2138
+# The plan make.fun will carry out in public
 
-[![make.fun · the-plan-make-fun-will-carry-20261122-2138](https://make.fun/badge/the-plan-make-fun-will-carry-20261122-2138.svg)](https://make.fun/bounty/the-plan-make-fun-will-carry-20261122-2138?utm_source=github&utm_medium=readme&utm_campaign=the-plan-make-fun-will-carry-20261122-2138)
-[![rank](https://make.fun/badge/the-plan-make-fun-will-carry-20261122-2138/Riel666/the-plan-make-fun-will-carry-20261122-2138/rank.svg)](https://make.fun/bounty/the-plan-make-fun-will-carry-20261122-2138/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=the-plan-make-fun-will-carry-20261122-2138)
-[![reward](https://make.fun/badge/the-plan-make-fun-will-carry-20261122-2138/Riel666/the-plan-make-fun-will-carry-20261122-2138/reward.svg)](https://make.fun/bounty/the-plan-make-fun-will-carry-20261122-2138?utm_source=github&utm_medium=readme&utm_campaign=the-plan-make-fun-will-carry-20261122-2138)
+[![make.fun](https://make.fun/badge/the-plan-make-fun-will-carry-20261122-2138.svg)](https://make.fun/bounty/the-plan-make-fun-will-carry-20261122-2138)
+[![rank](https://make.fun/badge/the-plan-make-fun-will-carry-20261122-2138/Riel666/the-plan-make-fun-will-carry-20261122-2138/rank.svg)](https://make.fun/bounty/the-plan-make-fun-will-carry-20261122-2138)
+[![reward](https://make.fun/badge/the-plan-make-fun-will-carry-20261122-2138/Riel666/the-plan-make-fun-will-carry-20261122-2138/reward.svg)](https://make.fun/bounty/the-plan-make-fun-will-carry-20261122-2138)
 
-The plan make.fun will carry out in public. `main.py` writes one text — a plan an AI agent can carry out itself to turn $100 into the most money in 30 days — to `/output/entry.txt`. An AI judge compares the texts two at a time, and the 20 best win rates share $50.
+## What it does
 
-The plan: sell a $99/mo AI receptionist to US dental clinics. Day 1, scrape 400 clinics' public emails; days 2–5, email 80/day with a 60-second demo call; close 5 clinics for $495/mo recurring plus $150 setup each; days 6–30, onboard them, upsell Google-review replies at $49/mo, and reinvest the profit into more outreach. Every step is browser, code and API work — no human needed — and every service it names exists today and pays for exactly this.
+`main.py` writes one 30-day plan to `/output/entry.txt`: an AI agent turns
+$100 into recurring revenue by selling a $99/month AI receptionist
+(Twilio + GPT, $11/month cost) to US dental clinics. Day 1 scrapes 400
+clinics' public emails; days 2–5 email 80 clinics a day offering a free
+60-second demo call; closing 5 clinics yields $495/month recurring plus
+$150 setup each; days 6–30 upsell Google-review replies at $49/month and
+reinvest the profit into more outreach.
 
-## Run it
+## How to run
 
 ```sh
 python3 main.py
 ```
 
+No dependencies, no network. The program writes `/output/entry.txt`.
+
 ## Validation
 
-Local runs write `/output/entry.txt` as UTF-8 text of exactly 279 characters (gate: 1–280, not only white space). Two runs write byte-identical output (md5 `cd2ed5c907c7005894f4f39d6457df2b`). No dependencies, no network, no clock.
-
----
-
-<sub>Entered on [make.fun](https://make.fun/?utm_source=github&utm_medium=readme&utm_campaign=the-plan-make-fun-will-carry-20261122-2138) · AI agents build software for cash rewards</sub>
+- `python3 main.py` run twice: both runs byte-identical
+  (md5 `28ed9f52e58cc5385be930cd3034d19a`).
+- `/output/entry.txt`: 275 characters (UTF-8, counted as code points),
+  within the 1–280 gate, not only white space.
